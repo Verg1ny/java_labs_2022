@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class lab1_6 {
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите число ");
+        int a = in.nextInt();
+        if (a>0){
+            String status1 = "Положительное";
+            System.out.print(status1 + " ");
+        } else if (a<0) {
+            String status1 = "Отрицательное";
+            System.out.print(status1 + " ");
+        }
+        if (a%2 == 0 & a!=0){
+            String status2 = "чётное";
+            System.out.print(status2 + " ");
+        } else if (a%2 == 1 | a%2 == -1 ) {
+            String status2 = "нечётное";
+            System.out.print(status2 + " ");
+        }
+        if (a==0){
+            System.out.println("Нулевое число");
+        }
+        else {
+            System.out.print("число");
+        }
+    }
+}
