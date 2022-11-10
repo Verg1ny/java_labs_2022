@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class lab1_2 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите трехзначтное число ");
+        int a = in.nextInt();
+        int firstN = a % 10;
+        int secondN = (a/10) % 10;
+        int thirdN = (a/100) % 10;
+        int sum = firstN + secondN + thirdN;
+        System.out.println("Сумма цифр: " + sum);
+    }
+}
