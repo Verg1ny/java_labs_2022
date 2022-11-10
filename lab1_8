@@ -1,0 +1,32 @@
+public class lab1_8 {
+    public static void main(String[] args) {
+        int[] Numbers = new int[] {1,-10,5,6,45,23, 45,-34,0,32,56,-1,2,-2};
+        int max = 0;
+        int sum1 = 0;
+        int sum2 = 0;
+        int count = 0;
+        float sumA = 0;
+        int countA = 0;
+        for (int i = 0; i<14; i++){
+            if (max < Numbers[i]) {
+                max = Numbers[i];
+            }
+            if (Numbers[i] > 0){
+                sum1 = sum1 + Numbers[i];
+                count++;
+            }
+            if (Numbers[i] < 0 & Numbers[i]%2 == 0){
+                sum2 = sum2 + Numbers[i];
+            }
+            if (Numbers[i] < 0){
+                sumA = sumA + Numbers[i];
+                countA++;
+            }
+        }
+        System.out.println("Максимум: " + max);
+        System.out.println("Сумма положительных чисел: " + sum1);
+        System.out.println("Количество положительных чисел: " + count);
+        System.out.println("Сумма отрицательных нечетных чисел: " + sum2);
+        System.out.println("Среднее арифметическое отрицательных чисел: " + (sumA/countA));
+    }
+}
