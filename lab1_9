@@ -1,0 +1,14 @@
+public class lab1_9 {
+    public static void main(String[] args) {
+        int[] Numbers = new int[]{15,10,51, 6, 5,3, 10,-34,0,32,56, 12,24, 52};
+        int[] NumbersN = new int[Numbers.length];
+        int a = 0;
+        for (int i = Numbers.length - 1; i >= 0; i--) {
+            NumbersN[a] = Numbers[i];
+            a++;
+        }
+        for (int i = 0; i < NumbersN.length ; i++){
+            System.out.print(NumbersN[i] + " ");
+        }
+    }
+}
